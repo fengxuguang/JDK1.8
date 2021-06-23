@@ -1,0 +1,26 @@
+2020-07-21 21:51:02.333 [Thread-5] INFO  io.github.biezhi.wechat.api.WechatClient -
+				[*] 正在获取 uuid ... 
+2020-07-21 21:51:02.757 [Thread-5] INFO  io.github.biezhi.wechat.api.WechatClient -
+				[*] 正在获取二维码 ... 成功
+
+2020-07-21 21:51:03.910 [Thread-5] INFO  io.github.biezhi.wechat.api.WechatClient -
+				[*] 请使用微信扫描二维码以登录 ... 
+
+2020-07-21 21:51:08.698 [Thread-5] INFO  io.github.biezhi.wechat.api.WechatClient -
+				[*] 请在手机上点击确认以登录 ... 
+
+2020-07-21 21:51:10.764 [Thread-5] INFO  io.github.biezhi.wechat.api.WechatApi -
+				[*] 设置cookie []
+2020-07-21 21:52:56.105 [Thread-7] INFO  io.github.biezhi.wechat.api.WechatClient -
+				[*] 正在获取 uuid ... 
+2020-07-21 21:52:56.430 [Thread-7] INFO  io.github.biezhi.wechat.api.WechatClient -
+				[*] 正在获取二维码 ... 成功
+
+2020-07-21 21:52:57.594 [Thread-7] INFO  io.github.biezhi.wechat.api.WechatClient -
+				[*] 请使用微信扫描二维码以登录 ... 
+
+2020-07-21 21:53:00.471 [Thread-7] INFO  io.github.biezhi.wechat.api.WechatClient -
+				[*] 请在手机上点击确认以登录 ... 
+
+2020-07-21 21:53:02.535 [Thread-7] INFO  io.github.biezhi.wechat.api.WechatApi -
+				[*] 设置cookie []
