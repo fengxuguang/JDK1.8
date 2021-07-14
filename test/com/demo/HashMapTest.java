@@ -7,6 +7,11 @@ public class HashMapTest {
 
     public static void main(String[] args) {
         Map<String, String> map = new HashMap<>();
+
+        map.put("k1", "v1");
+        map.put("k2", "v2");
+
+        System.out.println(map);
     }
 
 }

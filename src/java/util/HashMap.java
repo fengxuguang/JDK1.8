@@ -395,6 +395,14 @@ public class HashMap<K,V> extends AbstractMap<K,V>
 
     /**
      * Returns a power of two size for the given target capacity.
+     * cap = 7
+     * n = cap - 1 = 6 = 0110
+     * n |= n >>> 1 = 0110 >>> 1 = 0011 | 0110 = 0101
+     * n |= n >>> 2 = 0101 >>> 2 = 0001 | 0101 = 0111
+     * n |= n >>> 4 = 0111 >>> 4 = 0000 | 0111 = 0111
+     * n |= n >>> 8 = 0000 >>> 8 = 0000 | 0111 = 0111
+     * n |= n >>> 16 = 0111 >>> 16 = 0000 | 0111 = 0111
+     *
      */
     static final int tableSizeFor(int cap) {
         int n = cap - 1;
