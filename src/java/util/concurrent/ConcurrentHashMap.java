@@ -507,6 +507,7 @@ public class ConcurrentHashMap<K,V> extends AbstractMap<K,V>
      * bounds for power of two table sizes, and is further required
      * because the top two bits of 32bit hash fields are used for
      * control purposes.
+     * 最大容量为 2 的 30 次方
      */
     private static final int MAXIMUM_CAPACITY = 1 << 30;
 
@@ -546,6 +547,7 @@ public class ConcurrentHashMap<K,V> extends AbstractMap<K,V>
      * than 2, and should be at least 8 to mesh with assumptions in
      * tree removal about conversion back to plain bins upon
      * shrinkage.
+     * 链表转红黑树阈值为8，当阈值为 9 时转红黑树
      */
     static final int TREEIFY_THRESHOLD = 8;
 
@@ -553,6 +555,7 @@ public class ConcurrentHashMap<K,V> extends AbstractMap<K,V>
      * The bin count threshold for untreeifying a (split) bin during a
      * resize operation. Should be less than TREEIFY_THRESHOLD, and at
      * most 6 to mesh with shrinkage detection under removal.
+     * 红黑树转链表的阈值，为6时转红黑树
      */
     static final int UNTREEIFY_THRESHOLD = 6;
 
@@ -561,6 +564,7 @@ public class ConcurrentHashMap<K,V> extends AbstractMap<K,V>
      * (Otherwise the table is resized if too many nodes in a bin.)
      * The value should be at least 4 * TREEIFY_THRESHOLD to avoid
      * conflicts between resizing and treeification thresholds.
+     * 转红黑树时最小容量为 64
      */
     static final int MIN_TREEIFY_CAPACITY = 64;
 
